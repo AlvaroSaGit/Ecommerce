@@ -8,13 +8,15 @@
 
 :root{
   --primario:#ffff;
+  --prueba:tomato;
+  --prueba2:darkred;
 }
 
 /*HEADER*/
 .header{
   width: 100%;
   height: 40px;
-  background-color: tomato;
+  background-color: var(--prueba);
   position: relative;
   margin-bottom: 50px;
 }
@@ -50,12 +52,37 @@
 }
 
 /*MAIN*/
-
-.main__tarjeta{
+.main__aside,.main__contenedor{
   display: inline-block;
-  background-color: tomato;
+  vertical-align: top;
+}
+
+.main__aside{
+  width: 10%;
+  height: 100vh;
+  background-color: var(--prueba2);
+}
+
+.main__contenedor{
+  width: 88%;
+}
+
+.main__contenedor-tarjeta{
+  display: inline-block;
+  background-color: var(--prueba);
   width: 250px;
   height: 350px;
   cursor: pointer;
   transition: 1s;
+}
+
+.main__contenedor-tarjeta:hover{
+  transform: scale3d(1.1, 1.1, 1);
+  box-shadow: 1px 1px 20px yellow;
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: var(--prueba);
 }
