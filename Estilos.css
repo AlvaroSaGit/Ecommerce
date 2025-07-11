@@ -58,9 +58,28 @@
 }
 
 .main__aside{
+  text-align: center;
   width: 10%;
-  height: 100vh;
+  height: 120vh;
   background-color: var(--prueba2);
+}
+
+.main__aside h1{
+  margin-top: 20px;
+}
+
+.main__aside-categorias{
+  text-decoration: none;
+  display: block;
+  margin: 50px 0px;
+  color: black;
+}
+
+.main__aside-categorias:hover{
+  background-color: var(--primario);
+  margin: 50px auto;
+  width: 80%;
+  border-radius: 10px;
 }
 
 .main__contenedor{
@@ -74,12 +93,32 @@
   height: 350px;
   cursor: pointer;
   transition: 1s;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.main__tarjeta-imagen{
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 7px 7px var(--prueba2);
 }
 
 .main__contenedor-tarjeta:hover{
   transform: scale3d(1.1, 1.1, 1);
   box-shadow: 1px 1px 20px yellow;
 }
+/*CAMBIOS DE IMAGENES*/
+
+/*Solo si el contenedor padre tiene un target activo, desactiva los demas*/
+.main__contenedor:has(:target) > * {
+  display: none;
+}
+/*Dentro del contenedor padre, todo el que tenga target, mostrarlos*/
+.main__contenedor > *:target {
+  display: inline-block;
+}
+
 
 .footer{
   width: 100%;
