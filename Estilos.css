@@ -7,16 +7,20 @@
 }
 
 :root{
-  --primario:#ffff;
-  --prueba:tomato;
-  --prueba2:darkred;
+  --primario:white;
+  --secundario:#ffd857;
+  --terciario:gray;
+}
+
+body{
+  background-color: var(--primario);
 }
 
 /*HEADER*/
 .header{
   width: 100%;
   height: 40px;
-  background-color: var(--prueba);
+  background-color: var(--secundario);
   position: relative;
   margin-bottom: 50px;
 }
@@ -60,8 +64,8 @@
 .main__aside{
   text-align: center;
   width: 10%;
-  height: 120vh;
-  background-color: var(--prueba2);
+  height: 100%;
+  border-right: 2px solid black;
 }
 
 .main__aside h1{
@@ -76,7 +80,7 @@
 }
 
 .main__aside-categorias:hover{
-  background-color: var(--primario);
+  background-color: var(--secundario);
   margin: 50px auto;
   width: 80%;
   border-radius: 10px;
@@ -88,7 +92,6 @@
 
 .main__contenedor-tarjeta{
   display: inline-block;
-  background-color: var(--prueba);
   width: 250px;
   height: 350px;
   cursor: pointer;
@@ -101,12 +104,13 @@
   margin-top: 20px;
   width: 200px;
   height: 200px;
-  box-shadow: 7px 7px var(--prueba2);
+  box-shadow: 0px 0px 2px var(--terciario);
+  border-radius: 10px;
 }
 
 .main__contenedor-tarjeta:hover{
   transform: scale3d(1.1, 1.1, 1);
-  box-shadow: 1px 1px 20px yellow;
+  box-shadow: 1px 1px 20px rgb(184, 184, 184);
 }
 /*CAMBIOS DE IMAGENES*/
 
@@ -119,9 +123,18 @@
   display: inline-block;
 }
 
+.contenedor__tarjeta-texto{
+  margin-top: 15px;
+}
 
 .footer{
+  text-align: center;
   width: 100%;
   height: 100px;
-  background-color: var(--prueba);
+}
+
+.footer__texto{
+  line-height: 95px;
+  display: inline-block;
+  margin: 0px 50px;
 }
