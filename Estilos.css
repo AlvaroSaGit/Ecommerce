@@ -31,6 +31,10 @@ body{
   height: 100%;
 }
 
+.header__titulo h1{
+  margin-left: 20px;
+}
+
 .header__nav{
   position: absolute;
   display: inline-block;
